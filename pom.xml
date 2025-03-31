@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.estatuas</groupId>
-  <artifactId>enumTypeArnold</artifactId>
+  <artifactId>enumtypearnold</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>stockx</name>
@@ -24,6 +24,12 @@
       <version>5.9.3</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>org.assertj</groupId>
+    	<artifactId>assertj-core</artifactId>
+    	<version>[3.22.0,)</version>
+    	<scope>test</scope>
+	</dependency>
   </dependencies>
 
   <build>
