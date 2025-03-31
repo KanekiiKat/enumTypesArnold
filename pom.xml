@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>edu.estatuas</groupId>
-  <artifactId>enumtypearnold</artifactId>
+  <artifactId>arnoldEnumType</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>stockx</name>
@@ -65,7 +65,7 @@
         <archive>
           <manifest>
             <addClasspath>true</addClasspath>
-            <mainClass>edu.estatuas.stockx.Stockx</mainClass>
+            <mainClass>edu.estatuas.arnoldEnumType.ArnoldMain</mainClass>
           </manifest>
           <manifestEntries>
             <url>${project.url}</url>
