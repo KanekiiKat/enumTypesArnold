@@ -36,5 +36,8 @@ public enum Planeta {
         return new Planeta[] {JUPITER, SATURN, URANUS, NEPTUNE};
     }
 
+    public double getRadio(){
+        return this.radio;
+    }
 
 }
