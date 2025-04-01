@@ -40,4 +40,7 @@ public enum Planeta {
         return this.radio;
     }
 
+    public double getMasa(){
+        return this.masa;
+    }
 }
