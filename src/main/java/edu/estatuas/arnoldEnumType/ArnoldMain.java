@@ -1,6 +1,6 @@
 package edu.estatuas.arnoldEnumType;
 
-import edu.estatuas.arnoldEnumType.logica.*;
+import edu.estatuas.arnoldEnumType.logica.Planeta;
 
 public class ArnoldMain {
 	

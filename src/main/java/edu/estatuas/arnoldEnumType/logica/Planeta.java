@@ -14,6 +14,8 @@ public enum Planeta {
     private double masa;
     private double radio;
 
+    private static final double G = 6.674e-11;
+
     private Planeta(double masa, double radio) {
         
         this.masa = masa;
@@ -21,14 +23,17 @@ public enum Planeta {
         
     }
 
-    public double getPlanetasTerrestres() {
-        return 0;
+    public  double pesoSuperficie(double miPeso){
+        double gravedad = G * this.masa / (this.radio * this.radio );
+        return gravedad * miPeso;
     }
 
-    public double getGigantesGaseosos() {
+    public static Planeta[] getPlanetasTerrestres() {
+        return new Planeta[] {MERCURY, VENUS, EARTH, MARS} ;
+    }
 
-        return 0;
-
+    public static Planeta[] getGigantesGaseosos() {
+        return new Planeta[] {JUPITER, SATURN, URANUS, NEPTUNE};
     }
 
 
