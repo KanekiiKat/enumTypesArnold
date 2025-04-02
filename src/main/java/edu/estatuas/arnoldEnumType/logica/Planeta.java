@@ -24,12 +24,18 @@ public enum Planeta {
     }
 
     public  double pesoSuperficie(double miPeso){
-        double gravedad = G * this.masa / (this.radio * this.radio );
-        return gravedad * miPeso;
+        double miMasa = miPeso / gravedadSuperficieTierra();
+        double gravedadSuperficie = G * this.masa / (this.radio * this.radio);
+        return miMasa * gravedadSuperficie;
+    }
+
+
+    public double gravedadSuperficieTierra(){
+        return G * EARTH.masa / Math.pow(EARTH.radio, 2); 
     }
 
     public static Planeta[] getPlanetasTerrestres() {
-        return new Planeta[] {MERCURY, VENUS, EARTH, MARS} ;
+        return new Planeta[] {MERCURY, VENUS, EARTH, MARS};
     }
 
     public static Planeta[] getGigantesGaseosos() {
